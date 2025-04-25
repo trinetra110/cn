@@ -16,7 +16,7 @@ def hamming_code(e,i,n):
             
 def encode():
     
-    a=input("Enter the data: ").split(" ")
+    a=input("Enter the data: ")
     a=map(int,a)
     a=list(a)
 
@@ -44,7 +44,7 @@ def encode():
         
 def decode():
 
-    b=input("Enter the hamming code: ").split(" ")
+    b=input("Enter the hamming code: ")
     b=map(int,b)
     b=list(b)
 
