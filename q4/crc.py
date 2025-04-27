@@ -39,10 +39,10 @@ def decode(ds,c,cl,dsl):
     crc(c,dsl,check,z,ds)
 
 def main():
-    c=input("Enter codeword: ").split(" ")
+    c=input("Enter codeword: ").split()
     c=map(int,c)
     c=list(c)
-    ds=input("Enter divisor: ").split(" ")
+    ds=input("Enter divisor: ").split()
     ds=map(int,ds)
     ds=list(ds)
 

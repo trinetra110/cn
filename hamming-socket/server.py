@@ -68,11 +68,16 @@ while True:
     conn, addr = sock.accept()
     print ('Got connection from', addr )
 
-    msg = conn.recv(1024)
-    msgf = msg.decode().split(':')
-    print(msg.decode())
-    code = msgf[1].strip()
-    st = h_decode(code)
-    print(st)
+    while True:
+        msg = conn.recv(1024)
+        msgf = msg.decode().split(':')
+        if len(msgf) == 1 or msgf[1].lower().strip() in ["exit", ""]:
+            print(msgf[0].strip() + " disconnected")
+            break
+        
+        print(msg.decode())
+        code = msgf[1].strip()
+        st = h_decode(code)
+        print(st)
 
     conn.close()

@@ -46,6 +46,7 @@ def h_encode(msg):
     for i in a[::-1]:
         print(i,end=" ")
         st += (str(i) + " ")
+    print()
 
     return st
 
@@ -57,9 +58,15 @@ port = 23456
 
 s.connect((host, port))
 
-msg = input(name + ': ')
-msg = h_encode(msg)
-msgf = name + ': ' + msg
-s.send(msgf.encode())
+while True:
+    msg = input(name + ': ')
+    if msg.lower().strip() in ['exit','']:
+        s.send(msg.encode())
+        print("Connection closed")
+        break
+    
+    msg = h_encode(msg)
+    msgf = name + ': ' + msg
+    s.send(msgf.encode())
 
 s.close()
