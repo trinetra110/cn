@@ -1,3 +1,5 @@
+# 6. Write chat program in Python using TCP with the help of an iterative server.
+
 import socket
 # Create a socket object
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

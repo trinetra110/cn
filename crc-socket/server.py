@@ -1,3 +1,5 @@
+# CRC using sockets
+
 import socket
 
 def xor(a,b):

@@ -1,3 +1,11 @@
+# CRC using sockets
+""" SAMPLE INPUT
+Enter your name: User
+Enter codeword: 1 0 0 1
+Enter divisor: 1 0 1 1
+Remainder/Syndrome: 1 1 0 
+"""
+
 import socket
 
 def xor(a,b):

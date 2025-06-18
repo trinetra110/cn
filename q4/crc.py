@@ -1,3 +1,20 @@
+# 4. Write Python program to implement Cyclic Redundancy Check (CRC) method.
+"""SAMPLE
+ENCODE
+Enter codeword: 1 0 0 1
+Enter divisor: 1 0 1 1
+1. Encode
+2. Decode
+Enter your choice: 1
+Remainder/Syndrome: 1 1 0 
+
+DECODE
+Enter codeword: 1 0 0 1 0 1 1 1 0 0 1
+Enter divisor: 1 0 0 1 1 1
+Enter your choice: 2
+Remainder/Syndrome: 1 0 1 1 1 
+"""
+
 def xor(a,b):
     o=[]
     #print("a,b:",a,b)

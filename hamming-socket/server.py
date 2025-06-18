@@ -1,3 +1,5 @@
+# Hamming code using sockets
+
 import socket
 
 def hamming_code(e,i,n):

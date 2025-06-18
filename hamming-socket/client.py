@@ -1,3 +1,9 @@
+# Hamming code using sockets
+""" SAMPLE INPUT
+User: 1 1 0 0 1 0 1 1
+Hamming code: 1 1 0 0 0 1 0 1 1 1 1 0 
+"""
+
 import socket
 
 def hamming_code(e,i,n):

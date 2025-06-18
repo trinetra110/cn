@@ -1,3 +1,5 @@
+# 7. Write socket program in Python for multi-client communication using TCP.
+
 import socket
 import threading
 

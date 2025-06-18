@@ -1,3 +1,5 @@
+# 8. Write socket program in Python to send a message from a client machine to a server machine using UDP.
+
 import socket
 
 # Create a UDP socket

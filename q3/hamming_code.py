@@ -1,3 +1,16 @@
+# 3. Write Python program to implement Hamming code.
+"""SAMPLE
+ENCODE
+Enter your choice: 1
+Enter the data: 11001011
+Hamming code: 1 1 0 0 0 1 0 1 1 1 1 0 
+
+DECODE
+Enter your choice: 2
+Enter the hamming code: 100110100101
+Data: 1 0 0 0 0 1 0 1 
+"""
+
 def hamming_code(e,i,n):
     j=(2**i)-1
     f=0

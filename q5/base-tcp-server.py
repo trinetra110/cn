@@ -1,3 +1,5 @@
+# 5. Write socket program in Python to send a message from a client machine to a server machine and a server machine to a client machine using TCP.
+
 import socket
 
 # Next create a socket object
